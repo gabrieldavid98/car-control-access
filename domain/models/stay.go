@@ -7,5 +7,5 @@ type Stay struct {
 	ID         int       `json:"id"`
 	AccessTime time.Time `json:"enterTime"`
 	ExitTime   time.Time `json:"exitTime"`
-	CarPlate   string    `json:"carPlate"`
+	Car        Car       `json:"car"`
 }
