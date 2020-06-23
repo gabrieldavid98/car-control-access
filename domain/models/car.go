@@ -4,7 +4,9 @@ import "time"
 
 // Car model
 type Car struct {
-	Plate     string    `json:"plate" validate:"eq=6 & format=alnum"`
-	Type      CarType   `json:"type"`
-	CreatedAt time.Time `json:"createdAt"`
+	Plate       string  `json:"plate"`
+	CarType     CarType `json:"type"`
+	TotalTime   int     `json:"totalTime"`
+	TotalAmount int
+	CreatedAt   time.Time `json:"createdAt"`
 }
